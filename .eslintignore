@@ -1,0 +1,12 @@
+node_modules
+
+/build
+/public/build
+.env
+remix.config.js
+.cache
+.history
+tailwind.config.js
+.eslintrc.js
+
+/app/styles/tailwind.css
