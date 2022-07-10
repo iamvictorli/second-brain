@@ -8,13 +8,17 @@ import {
   ScrollRestoration,
 } from '@remix-run/react'
 
+import appStyles from './styles/app.css'
 import styles from './styles/tailwind.css'
 
-export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
+export const links: LinksFunction = () => [
+  { rel: 'stylesheet', href: styles },
+  { rel: 'stylesheet', href: appStyles },
+]
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'New Remix App',
+  title: 'Victor Li',
   viewport: 'width=device-width,initial-scale=1',
 })
 
@@ -25,7 +29,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="m-auto max-w-4xl px-6 pt-8 pb-6 text-xl leading-8 sm:px-12">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

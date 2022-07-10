@@ -1,0 +1,31 @@
+a {
+  color: revert;
+  text-decoration: revert;
+}
+
+ul {
+  list-style: revert;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+    background: #000;
+  }
+  a:link {
+    color: #cdf;
+  }
+  a:hover,
+  a:visited:hover {
+    color: #def;
+  }
+  a:visited {
+    color: #dcf;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+  }
+}

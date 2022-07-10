@@ -1,4 +1,6 @@
-# My Minimal Remix Stack
+# Second Brain
+
+Built with https://github.com/iamvictorli/minimal-remix-stack
 
 ## Development
 
