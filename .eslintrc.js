@@ -11,6 +11,7 @@ module.exports = {
     'plugin:import/typescript',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'prettier',
   ],
   plugins: ['@typescript-eslint', 'import'],
   settings: {
@@ -28,7 +29,8 @@ module.exports = {
   rules: {
     'no-console': 'warn',
     semi: ['error', 'never'],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { avoidEscape: true }],
+    'func-style': ['error', 'declaration'],
     // @typescript-eslint
     '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
